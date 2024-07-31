@@ -1,0 +1,95 @@
+.head{
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 100;
+  background-color: white;
+}
+.image-logo{
+  width: 120px;
+  cursor: pointer;
+}
+.center{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 550px;
+  margin-left: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+.p,
+.p-sign{
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.15s;
+  font-size: 17px;
+  color: rgb(0, 45, 99);
+  display: inline-block;
+  cursor: pointer;
+}
+.p:hover{
+  background-color: rgb(238, 238, 238);
+}
+.p-sign:hover{
+  background-color: rgb(238, 238, 238);
+}
+.left{
+  width: 250px;
+}
+.right{
+  margin-right: 50px;
+  min-width: 150px;
+  margin-left: 30px;
+}
+.button-start{
+  padding: 8px 14px;
+  color: white;
+  background-color: #1B6DFF;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+}
+.button-start:hover{
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+}
+.div-width{
+  width: 200px;
+}
+.head__flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+  .image-logo {
+    display: none;
+  }
+  .left{
+    width: 0;
+  }
+  .head{
+    justify-content: left;
+  }
+  .p,
+  .p-sign{
+    font-size: 12px;
+    margin: 0;
+  }
+  .center{
+    justify-content:flex-start;
+  }
+}
+
